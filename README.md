@@ -11,7 +11,7 @@ This library requires you bundle it on with soemthing like browserfy or webpack.
 
     // point-Rectangle intersection
        
-    var PIXI = require('pixi.js'),
+    var PIXI = require('pixi.js')
     var Intersects = require('yy-intersects')
 
     // set up some standard boxes
