@@ -1,3 +1,5 @@
+Fork from: https://github.com/davidfig/pixi-intersects
+
 ## intersects
 shape collision / intersects library for pixi.js
 
