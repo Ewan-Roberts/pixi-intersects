@@ -7,6 +7,37 @@ this is a simple libary that i designed for use with my game engine. most of the
 ## Getting started
 This library requires you bundle it on with soemthing like browserfy or webpack.
 
+## Working Example
+
+    // point-Rectangle intersection
+       
+    const   PIXI = require('pixi.js'),
+            Intersects = require('yy-intersects')
+
+    // set up some standard boxes
+    let boxOne = new PIXI.Graphics()
+        .beginFill(0xFF3300)
+        .lineStyle(1,0xffd900)
+        .drawRect(0, 0, 250, 50);
+    boxOne.interactive = true;
+    boxOne.position.set(100,100) 
+    
+    let boxTwo = new PIXI.Graphics()
+        .beginFill(0xFF3300)
+        .lineStyle(1,0xffd900)
+        .drawRect(0, 0, 250, 50);
+    boxTwo.interactive = true;
+    boxTwo.position.set(100,150) 
+    
+    //Make our shapes recognised by the library and able to fire event on collision
+    boxOne.shape = new Intersects.Rectangle(boxOne)
+    boxTwo.shape = new Intersects.Rectangle(boxTwo)
+    
+    if (boxOne.shape.collidesRectangle(boxTwo.shape)){
+        console.log('boxOne and boxTwo are overlapping');
+    }
+
+
 
 ## Code Example
 
