@@ -11,18 +11,18 @@ This library requires you bundle it on with soemthing like browserfy or webpack.
 
     // point-Rectangle intersection
        
-    const   PIXI = require('pixi.js'),
-            Intersects = require('yy-intersects')
+    var PIXI = require('pixi.js'),
+    var Intersects = require('yy-intersects')
 
     // set up some standard boxes
-    let boxOne = new PIXI.Graphics()
+    var boxOne = new PIXI.Graphics()
         .beginFill(0xFF3300)
         .lineStyle(1,0xffd900)
         .drawRect(0, 0, 250, 50);
     boxOne.interactive = true;
     boxOne.position.set(100,100) 
     
-    let boxTwo = new PIXI.Graphics()
+    var boxTwo = new PIXI.Graphics()
         .beginFill(0xFF3300)
         .lineStyle(1,0xffd900)
         .drawRect(0, 0, 250, 50);
