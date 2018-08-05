@@ -5,7 +5,7 @@ shape collision / intersects library for pixi.js
 this is a simple libary that i designed for use with my game engine. most of the better collision libraries were too large or too heavily invested in physics. i wanted something simple that worked well with pixi.js.
 
 ## Getting started
-This library requires you bundle it on with soemthing like browserfy or webpack.
+This library requires you bundle it on with something like browserfy or webpack.
 
 ## Working Example
 
